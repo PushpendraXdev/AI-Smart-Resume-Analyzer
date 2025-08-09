@@ -129,10 +129,11 @@ if uploaded_file:
         st.plotly_chart(fig)
     with col2:
         vscore=[20,40,60,80,100]
-        hwhat=['Description','Auto']
+        hwhat=['Description','Need to have']
         fig=go.Figure(data=[
             go.Bar(x=hwhat,y=values)
         ])
         #fig.update_layout(title='Auto Score')
         st.plotly_chart(fig)
+
 
